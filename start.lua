@@ -361,7 +361,7 @@ message = 'ملك التفاعل'
 elseif tonumber(msgs) < 9500 then 
 message = 'امبراطور التفاعل' 
 elseif tonumber(msgs) < 10000000000 then 
-message = 'التفاعل كلو'  
+message = 'التفاعل كله'  
 end 
 return message 
 end
@@ -4235,7 +4235,7 @@ if Text == "Updates" then
 reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = '‹ تحديث البوت ›',data="UpBot"},{text = '‹ تحديث السورس ›',data="UpSu"}},
-{{text = '‹ قناة التحديثات ›',url="t.me/rssrsrr"}},
+{{text = '‹ قناة التحديثات ›',url="t.me/z2zzz3"}},
 {{text = '‹ رجوع ›',data="Can"}},
 }
 }
@@ -4971,7 +4971,7 @@ if redis:get(bot_id..":start") then
 r = redis:get(bot_id..":start")
 else
   r = [[
-    ‹ : أهلاً بك عزيزي انا بوت اسمي سجى
+    ‹ : أهلاً بك عزيزي انا بوت اسمي كاتيا
     ‹ : اختصاصي البوت حماية المجموعات
     ‹ : اضف البوت الى مجموعتك .
     ‹ : ارفعه ادمن مشرف
