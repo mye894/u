@@ -2201,7 +2201,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'الزرف', data = data.sender_user_id..'/topzrf'},{text = 'الفلوس', data = data.sender_user_id..'/topmon'},{text = 'زواجات', data = data.sender_user_id..'/zoztee'},
+{text = 'السرقه', data = data.sender_user_id..'/topzrf'},{text = 'الفلوس', data = data.sender_user_id..'/topmon'},{text = 'زواجات', data = data.sender_user_id..'/zoztee'},
 },
 {
 {text = 'المتبرعين', data = data.sender_user_id..'/motbra'},{text = 'الشركات', data = data.sender_user_id..'/shrkatt'},
@@ -2456,7 +2456,7 @@ local ty_users = redis:smembers(bot_id.."rrfffid")
 if #ty_users == 0 then
 return bot.sendText(chat_id,msg_id,"- لا يوجد احد","md",true)
 end
-ty_anubis = "توب 20 شخص زرفوا فلوس :\n\n"
+ty_anubis = "توب 20 شخص سرقهوا فلوس :\n\n"
 ty_list = {}
 for k,v in pairs(ty_users) do
 local mony = redis:get(bot_id.."rrfff"..v)
@@ -3700,7 +3700,7 @@ reply_markup = reply_markup
 t = "*- اوامر التسليه \n *ٴ— — — — — — — — —  ┉ ┉ *\n- الالعاب \n- الالعاب المتطوره\n- برج اسم برجك \n- زخرفه النص\n- احسب عمرك\n- بحث + اسم الاغنية\n- ثنائي\n- فلم\n- غنيلي\n- تحدي\n- زوجيني\n- افتاري\n- استوري\n- ميمز \n- قولي + الكلام\n- قيف\n- افتار\n- افتارات عيال\n- افتارات بنات\n- تتزوجيني\n- انا مين\n- قولي - الكلام \n- كت تويت : كت : كت\n- ٴId\n- همسه\n- صراحه\n- لو خيروك\n- نادي المطور\n- يوزري\n- اسمي\n- البايو\n- شخصيتي\n- لقبي\n- ايديي\n- مسح نقاطي \n- نقاطي\n- مسح رسائلي \n- رسائلي\n- مسح جهاتي \n- تفاعلي\n- جهاتي\n- مسح تعديلاتي \n- تعديلاتي  \n- معلوماتي \n- التاريخ/الساعه \n- رابط الزخرفه\n- جمالي\n- نسبه الحب - الكره\n- نسبه الذكاء - الغباء \n- نسبه الرجوله - الانوثه\n*"
 elseif infomsg[2] == '9' then
 reply_markup = reply_markup
-t = "*- مرحبا بك عزيزي في لعبة البنك $\n *ٴ— — — — — — — — —  *\n- انشاء حساب بنكي ↢تكدر تسوي حساب بالبنك والكريدت كارد اللي يعجبك \n- مسح حساب بنكي ↢ تمسح حسابك \n-  حسابي ↢ تشوف معلومات حسابك\n*ٴ— — — — — — — — —  *\n-   امر + مبلغ\n-   زرف & زرف\n-  استثمار\n-  حظ\n-  مضاربه\n-  كنز\n-  *ٴ— — — — — — — — —  *\n-  راتب\n-  بخشيش\n-  توب الفلوس\n-  توب الحراميه\n-  *ٴ— — — — — — — — —  *\n-  توب المتزوجين\n-  زواج + مبلغ\n-  زوجي\n-  طلاق\n-  خلع\n-  ترتيبي\n*"
+t = "*- مرحبا بك عزيزي في لعبة البنك $\n *ٴ— — — — — — — — —  *\n- انشاء حساب بنكي ↢تكدر تسوي حساب بالبنك والكريدت كارد اللي يعجبك \n- مسح حساب بنكي ↢ تمسح حسابك \n-  حسابي ↢ تشوف معلومات حسابك\n*ٴ— — — — — — — — —  *\n-   امر + مبلغ\n-   سرقه & سرقه\n-  استثمار\n-  حظ\n-  مضاربه\n-  كنز\n-  *ٴ— — — — — — — — —  *\n-  راتب\n-  بخشيش\n-  توب الفلوس\n-  توب الحراميه\n-  *ٴ— — — — — — — — —  *\n-  توب المتزوجين\n-  زواج + مبلغ\n-  زوجي\n-  طلاق\n-  خلع\n-  ترتيبي\n*"
 elseif infomsg[2] == '5' then
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
@@ -8257,7 +8257,7 @@ name = string.gsub(name,"🧚‍♀","🧚‍♂🧚‍♂🧚‍♂??‍♂🧚
 name = string.gsub(name,"🧜‍♂","🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧚‍♂🧜‍♀🧜‍♀🧜‍♀")
 name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♂🧝‍♀🧝‍♀🧝‍♀")
 name = string.gsub(name,"🙍‍♂️","🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️")
-name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♂️??‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
+name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️??‍♂️??‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
 name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍??👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
 name = string.gsub(name,"??","🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒")
@@ -8374,7 +8374,7 @@ bot.sendText(msg.chat_id,msg.id,[[
 
 - بخشيش ↢ يعطيك بخشيش كل ١٠ دقايق
 
-- زرف ↢ تزرف فلوس اشخاص كل ١٠ دقايق
+- سرقه ↢ تسرقه فلوس اشخاص كل ١٠ دقايق
 
 - استثمار ↢ تستثمر بالمبلغ اللي تبيه مع نسبة ربح مضمونه من ١٪؜ الى ١٥٪؜
 
@@ -8390,7 +8390,7 @@ bot.sendText(msg.chat_id,msg.id,[[
 
 - توب الفلوس ↢ يطلع توب اكثر ناس معهم فلوس بكل المجموعهات
 
-- توب الحراميه ↢ يطلع لك اكثر ناس زرفوا
+- توب الحراميه ↢ يطلع لك اكثر ناس سرقهوا
 
 - زواج  ↢ تكتبه بالرد على رسالة شخص مع المهر ويزوجك
 
@@ -8806,7 +8806,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..cccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- الزرف ( "..math.floor(pppp).." دينار 💵 )\n- شخصيتك : "..shkseemg.."\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..cccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- السرقه ( "..math.floor(pppp).." دينار 💵 )\n- شخصيتك : "..shkseemg.."\n","md",true, false, false, false, reply_markup)
 else
 bot.sendText(msg.chat_id,msg.id, "- ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true, false, false, false, reply_markup)
 end
@@ -8891,7 +8891,7 @@ redis:del(bot_id.."carsonaname"..Remsg.sender_id.user_id)
 redis:del(bot_id.."carsonanum"..Remsg.sender_id.user_id)
 redis:del(bot_id.."carcoroname"..Remsg.sender_id.user_id)
 redis:del(bot_id.."carcoronum"..Remsg.sender_id.user_id)
-bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار ?? )\n- الزرف ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- مسكين مسحت حسابه \n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار ?? )\n- السرقه ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- مسكين مسحت حسابه \n","md",true, false, false, false, reply_markup)
 else
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
@@ -8937,7 +8937,7 @@ shkseemg = "طيبة 😇"
 else
 shkseemg = "شريرة 😈"
 end
-bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- الزرف ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- شخصيته : "..shkseemg.."\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- السرقه ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- شخصيته : "..shkseemg.."\n","md",true, false, false, false, reply_markup)
 else
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
@@ -9023,7 +9023,7 @@ redis:del(bot_id.."carsonanum"..coniss)
 redis:del(bot_id.."carcoroname"..coniss)
 redis:del(bot_id.."carcoronum"..coniss)
 redis:srem(bot_id.."rrfffid", coniss)
-bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- الزرف ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- مسكين مسحت حسابه \n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ `"..ccccc.."`\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الرصيد ↢ ( "..convert_mony.." دينار 💵 )\n- السرقه ↢ ( "..math.floor(ppppp).." دينار 💵 )\n- مسكين مسحت حسابه \n","md",true, false, false, false, reply_markup)
 else
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
@@ -9398,7 +9398,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'الزرف', data = msg.sender_id.user_id..'/topzrf'},{text = 'الفلوس', data = msg.sender_id.user_id..'/topmon'},{text = 'زواجات', data = msg.sender_id.user_id..'/zoztee'},
+{text = 'السرقه', data = msg.sender_id.user_id..'/topzrf'},{text = 'الفلوس', data = msg.sender_id.user_id..'/topmon'},{text = 'زواجات', data = msg.sender_id.user_id..'/zoztee'},
 },
 {
 {text = 'المتبرعين', data = msg.sender_id.user_id..'/motbra'},{text = 'الشركات', data = msg.sender_id.user_id..'/shrkatt'},
@@ -9492,7 +9492,7 @@ data = {
 }
 return bot.sendText(msg.chat_id,msg.id,top_mony..gg,"md",false, false, false, false, reply_markup)
 end
-if text == "توب الحراميه" or text == "توب الحرامية" or text == "توب حراميه" or text == "توب الزرف" or text == "توب زرف" then
+if text == "توب الحراميه" or text == "توب الحرامية" or text == "توب حراميه" or text == "توب السرقه" or text == "توب سرقه" then
 local ban = bot.getUser(msg.sender_id.user_id)
 if ban.first_name then
 news = "["..ban.first_name.."]("..ban.first_name..")"
@@ -9504,7 +9504,7 @@ local ty_users = redis:smembers(bot_id.."rrfffid")
 if #ty_users == 0 then
 return bot.sendText(chat_id,msg_id,"- لا يوجد احد","md",true)
 end
-ty_anubis = "توب 20 شخص زرفوا فلوس :\n\n"
+ty_anubis = "توب 20 شخص سرقهوا فلوس :\n\n"
 ty_list = {}
 for k,v in pairs(ty_users) do
 local mony = redis:get(bot_id.."rrfff"..v)
@@ -9580,7 +9580,7 @@ local jjjo = math.random(200,7000);
 ballanceed = redis:get(bot_id.."boob"..msg.sender_id.user_id) or 0
 bakigcj = ballanceed + jjjo
 redis:set(bot_id.."boob"..msg.sender_id.user_id , bakigcj)
-bot.sendText(msg.chat_id,msg.id,"- هذه رشوة بطل زرف "..jjjo.." دينار 💵","md",true)
+bot.sendText(msg.chat_id,msg.id,"- هذه رشوة بطل سرقه "..jjjo.." دينار 💵","md",true)
 redis:setex(bot_id.."iioo" .. msg.sender_id.user_id,620, true)
 else
 redis:setex(bot_id.."polrsho" .. msg.sender_id.user_id,320, true)
@@ -9616,20 +9616,20 @@ else
 bot.sendText(msg.chat_id,msg.id, "- ماعندك حساب بنكي ارسل ↢ ( `انشاء حساب بنكي` )","md",true, false, false, false, reply_markup)
 end
 end
-if text == 'زرف' and tonumber(msg.reply_to_message_id) == 0 then
+if text == 'سرقه' and tonumber(msg.reply_to_message_id) == 0 then
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = 'اخفاء ',data ="https://t.me/delAmr"}},
 }
 }
 ballanceed = redis:get(bot_id.."boob"..msg.sender_id.user_id) or 0
-bot.sendText(msg.chat_id,msg.id, "استعمل الامر كذا :\n\n`زرف` بالرد","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "استعمل الامر كذا :\n\n`سرقه` بالرد","md",true, false, false, false, reply_markup)
 return false
 end
 ---------------------------------------------------------
 
 --------------------------------------------------------------------
-if text == 'زرف' or text == 'زرفو' or text == 'زرفه' and tonumber(msg.reply_to_message_id) ~= 0 then
+if text == 'سرقه' or text == 'سرقهو' or text == 'سرقهه' and tonumber(msg.reply_to_message_id) ~= 0 then
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = 'اخفاء ',data ="https://t.me/delAmr"}},
@@ -9639,7 +9639,7 @@ ballanceed = redis:get(bot_id.."boob"..msg.sender_id.user_id) or 0
 if redis:sismember(bot_id.."booob",msg.sender_id.user_id) then
 shkse = redis:get(bot_id.."shkse"..msg.sender_id.user_id)
 if shkse == "طيبة" then
-return bot.sendText(msg.chat_id,msg.id, "- شخصيتك طيبة ماتكدر تزرف العالم","md",true, false, false, false, reply_markup)
+return bot.sendText(msg.chat_id,msg.id, "- شخصيتك طيبة ماتكدر تسرقه العالم","md",true, false, false, false, reply_markup)
 end
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
@@ -9648,7 +9648,7 @@ bot.sendText(msg.chat_id,msg.id,"\n*- كاتيا ماعندها حساب بال�
 return false
 end
 if Remsg.sender_id.user_id == msg.sender_id.user_id then
-bot.sendText(msg.chat_id,msg.id,"\n*- بدك تزرف نفسك 🤡*","md",true, false, false, false, reply_markup)  
+bot.sendText(msg.chat_id,msg.id,"\n*- بدك تسرقه نفسك 🤡*","md",true, false, false, false, reply_markup)  
 return false
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -9658,12 +9658,12 @@ return bot.sendText(msg.chat_id,msg.id,"- انتا بالسجن 🏤 استنى 
 end
 if redis:ttl(bot_id.."hrame" .. Remsg.sender_id.user_id) >=60 then
 local hours = redis:ttl(bot_id.."hrame" .. Remsg.sender_id.user_id) / 60
-return bot.sendText(msg.chat_id,msg.id,"- ذا المسكين مزروف قبل شوي\n- يمديك تزرفه بعد "..math.floor(hours).." دقيقة","md",true, false, false, false, reply_markup)
+return bot.sendText(msg.chat_id,msg.id,"- ذا المسكين مسروق قبل شوي\n- يمديك تسرقهه بعد "..math.floor(hours).." دقيقة","md",true, false, false, false, reply_markup)
 end
 if redis:sismember(bot_id.."booob",Remsg.sender_id.user_id) then
 ballanceed = redis:get(bot_id.."boob"..Remsg.sender_id.user_id) or 0
 if tonumber(ballanceed) < 199 then
-return bot.sendText(msg.chat_id,msg.id, "- ماتكدر تزرفه فلوسه اقل من 200 دينار 💵","md",true, false, false, false, reply_markup)
+return bot.sendText(msg.chat_id,msg.id, "- ماتكدر تسرقهه فلوسه اقل من 200 دينار 💵","md",true, false, false, false, reply_markup)
 end
 shkseto = redis:get(bot_id.."shkse"..Remsg.sender_id.user_id)
 if shkseto == "طيبة" then
@@ -9690,7 +9690,7 @@ redis:set(bot_id.."hrameid"..msg.chat_id..Remsg.sender_id.user_id,msg.sender_id.
 redis:set(bot_id.."balcmsrok"..msg.chat_id..Remsg.sender_id.user_id,hrame)
 redis:setex(bot_id.."timehrame"..msg.chat_id..msg.sender_id.user_id,30, true)
 bot.deleteMessages(msg.chat_id,{[1]= msg.id})
-bot.sendText(msg.chat_id,0, "- "..news.." في حرامي زرفك "..hrame.." دينار 💵\n- رد عليه بكلمة ( شرطه )\n- معك 30 ثانية\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,0, "- "..news.." في حرامي سرقهك "..hrame.." دينار 💵\n- رد عليه بكلمة ( شرطه )\n- معك 30 ثانية\n","md",true, false, false, false, reply_markup)
 else
 local hrame = math.floor(math.random() * 200) + 1;
 local ballanceed = redis:get(bot_id.."boob"..Remsg.sender_id.user_id) or 0
@@ -9704,7 +9704,7 @@ local zoropeo = redis:get(bot_id.."rrfff"..msg.sender_id.user_id) or 0
 zoroprod = zoropeo + hrame
 redis:set(bot_id.."rrfff"..msg.sender_id.user_id,zoroprod)
 redis:sadd(bot_id.."rrfffid",msg.sender_id.user_id)
-bot.sendText(msg.chat_id,msg.id, "- خذ يالحرامي زرفته "..hrame.." دينار 💵\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- خذ يالحرامي سرقهته "..hrame.." دينار 💵\n","md",true, false, false, false, reply_markup)
 end
 else
 bot.sendText(msg.chat_id,msg.id, "- ماعنده حساب بنكي ","md",true, false, false, false, reply_markup)
@@ -9763,7 +9763,7 @@ bot.sendText(msg.chat_id,msg.id, "- ماعندك حساب بنكي ارسل ↢ 
 end
 end
 
-if text == 'شرطه' or text == 'الشرطه' or text == 'شرطة' and tonumber(msg.reply_to_message_id) ~= 0 then
+if text == 'شرطه' or text == 'الشرطه' or text == 'شرطة' and tonumber(msg.reply_to_message_id) ~= 30 then
 if redis:sismember(bot_id.."booob",msg.sender_id.user_id) then
 local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Remsg.sender_id.user_id)
@@ -13734,7 +13734,7 @@ bot.sendText(msg.chat_id,msg.id, "- ماعندك حساب بنكي ارسل ↢ 
 end
 end
 ---------------
-if text == "الغشاشين زرف" then
+if text == "الغشاشين سرقه" then
 if devS(msg.sender_id.user_id) then
 local ban = bot.getUser(msg.sender_id.user_id)
 if ban.first_name then
@@ -13747,7 +13747,7 @@ local ty_users = redis:smembers(bot_id.."rrfffid")
 if #ty_users == 0 then
 return bot.sendText(chat_id,msg_id,"- لا يوجد احد","md",true)
 end
-ty_anubis = "توب 20 شخص زرفوا فلوس :\n\n"
+ty_anubis = "توب 20 شخص سرقهوا فلوس :\n\n"
 ty_list = {}
 for k,v in pairs(ty_users) do
 local mony = redis:get(bot_id.."rrfff"..v)
@@ -13955,7 +13955,7 @@ uuuuu = redis:get(bot_id.."bbobb"..Remsg.sender_id.user_id)
 ppppp = redis:get(bot_id.."rrfff"..Remsg.sender_id.user_id) or 0
 ballanceed = redis:get(bot_id.."boob"..Remsg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballanceed)
-bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ "..ccccc.."\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- الزرف ↢ ( "..ppppp.." دولار ?? )\n- رفعه رصيده ↢ ( "..convert_mony.." دينار 💵 )\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id, "- الاسم ↢ "..news.."\n- الحساب ↢ "..ccccc.."\n- بنك ↢ ( كاتيا )\n- نوع ↢ ( "..uuuuu.." )\n- السرقه ↢ ( "..ppppp.." دولار ?? )\n- رفعه رصيده ↢ ( "..convert_mony.." دينار 💵 )\n","md",true, false, false, false, reply_markup)
 else
 bot.sendText(msg.chat_id,msg.id, "- ماعنده حساب بنكي ","md",true, false, false, false, reply_markup)
 end
@@ -17693,14 +17693,14 @@ if not Administrator(msg) then
 return bot.sendText(msg.chat_id,msg.id,'\n*- عذراً الامر يخص الادمن فقط .* ',"md",true)  
 end
 redis:set(bot_id.."youutube"..msg.chat_id,true) 
-bot.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"*- عذراء اليوتيوب متوقف حاليا *").by,"md",true)
+bot.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"*- أعتذر.. اليوتيوب متوقف حاليا *").by,"md",true)
 end
 if text == 'تعطيل اليوتيوب' or text == 'تعطيل يوتيوب' then
 if not Administrator(msg) then
 return bot.sendText(msg.chat_id,msg.id,'\n*- عذراً الامر يخص الادمن فقط .* ',"md",true)  
 end
 redis:del(bot_id.."youutube"..msg.chat_id) 
-bot.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"*- عذراء اليوتيوب متوقف حاليا *").by,"md",true)
+bot.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"*- أعتذر.. اليوتيوب متوقف حاليا *").by,"md",true)
 end
 if text == 'تفعيل ضع رتبه' then
 if not Administrator(msg) then
