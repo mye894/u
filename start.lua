@@ -8278,7 +8278,7 @@ end
 if text == 'بوت الزخرفة' or text == 'رابط الزخرفه' or text == 'زخرفة' or text == 'زخرفه' then
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = '‹ اضغط هنا ›',url="t.me/O6VBoT"}},
+{{text = '‹ اضغط هنا ›',url="t.me/V89_BOT"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'*بوت الزخرفه*',"md", true, false, false, false, reply_markup)
