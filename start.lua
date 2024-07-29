@@ -8268,7 +8268,7 @@ name = string.gsub(name,"📅","📆📆📆📆📆📆📅????")
 return bot.sendText(msg.chat_id,msg.id,"*- اسرع واحد يرسل الاختلاف ~* ( ["..name.."] )","md",true)  
 end
 
-if text == 'القوانين' then
+if text == 'القوانين' or text == 'قوانين الكروب' or text == 'شنو القوانين' or text == 'قوانين' then
 if redis:get(bot_id..":"..msg.chat_id..":Law") then
 t = redis:get(bot_id..":"..msg.chat_id..":Law")
 else
@@ -10014,7 +10014,7 @@ if tonumber(ratbinc) == 240 or tonumber(ratbinc) == 241 then
 bot.sendText(msg.chat_id,msg.id,"- اشعار ايداع "..neews.."\n\n- المبلغ : 100000 دينار 💵\n- وظيفتك : تاجر ممنوعات 🧔‍♂️\n- نوع العملية : اضافة راتب\n- تطوير الراتب : "..tonumber(ratbinc).."\n- رصيدك الان : "..convert_mony.." دينار 💵\n\nتستطيع الان تطوير راتبك ارسل ( `تطوير راتب` )\n","md",true, false, false, false, reply_markup)
 redis:set(bot_id.."ratbinc"..msg.sender_id.user_id,240)
 else
-bot.sendText(msg.chat_id,msg.id,"- اشعار ايداع "..neews.."\n\n- المبلغ : 100000 دينار 💵\n- وظيفتك : تاجر ممنوعات 🧔‍♂️\n- نوع العملية : اضافة راتب\n- تطوير الراتب : "..tonumber(ratbinc).."\n- رصيدك الان : "..convert_mony.." دينار 💵\n","md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,"- اشعار ايداع "..neews.."\n\n- المبلغ : 100000 دينار ??\n- وظيفتك : تاجر ممنوعات 🧔‍♂️\n- نوع العملية : اضافة راتب\n- تطوير الراتب : "..tonumber(ratbinc).."\n- رصيدك الان : "..convert_mony.." دينار 💵\n","md",true, false, false, false, reply_markup)
 end
 elseif tonumber(ratbinc) >= 180 and tonumber(ratbtrans) == 7 then
 local ratpep = ballancee + 70000
