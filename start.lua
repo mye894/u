@@ -8287,7 +8287,7 @@ end
 if text == 'همسه' or text == 'همسة' or text == 'بوت همسه' or text == 'بوت الهمسه' or text == 'ه' then
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = '‹ اضغط هنا ›',url="t.me/MGQBoT"}},
+{{text = '‹ اضغط هنا ›',url="t.me/KKK8bbot"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'*بوت الهمسة*',"md", true, false, false, false, reply_markup)
