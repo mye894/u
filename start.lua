@@ -14349,6 +14349,18 @@ local NamecBots = {
 return bot.sendText(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
+if text == 'هيج' then
+if redis:get(bot_id.."Status:Reply"..msg.chat_id) then
+local NamecBots = {
+'هيج لو دجاجه 🤣😌',
+'لا يابه مو هيج منو كلك اني اعرف 🙃',
+'لا مو هيج 🤓',
+'اني فراعت خضره دكلي هيج متستحي 😔',
+'لتكول هيج اضوج من هاي الكلمه 😑',
+'يله نغني هنــ🇭🇺ــدي هيجي كيجي ميجي ليجي 🤷🏼‍♂️',
+'وح كول الغيري هيج مو الي 😒',
+'ديلا طبك مرض لاتحجي 🤣👏🏻. ',
+}
 if text == 'مرحبا' then
 if redis:get(bot_id.."Status:Reply"..msg.chat_id) then
 local NamecBots = {
@@ -14586,12 +14598,15 @@ local NamecBots = {
 return bot.sendText(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
-if text == 'احم' then
+if text == 'احم' or text == 'ءحم' or text == 'احمم' or text == 'احم احم' then
 if redis:get(bot_id.."Status:Reply"..msg.chat_id) then
 local NamecBots = {
-'صحه ياقلبي',
-'احم احم',
-'صحه صحه',
+'رز بالحم 🙄🤷🏼‍♀️',
+'شبيك تتحمحم نطو مي خطيه غص بلكمته 🙄',
+'ها خير شبيك 😉',
+'طبوله ع ضهره 🙃',
+'احمات 😏',
+'جيبوله مي 😅',
 }
 return bot.sendText(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
