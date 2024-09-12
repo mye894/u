@@ -8279,7 +8279,7 @@ end
 if text == 'بوت الزخرفة' or text == 'رابط الزخرفه' or text == 'زخرفة' or text == 'زخرفه' then
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = '‹ اضغط هنا ›',url="t.me/V89_BOT"}},
+{{text = '‹ اضغط هنا ›',url="t.me/zz2zkbot"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'*بوت الزخرفه*',"md", true, false, false, false, reply_markup)
@@ -23762,7 +23762,7 @@ bot.sendText(msg.chat_id,msg.id,tttttt)
 redis:del(bot_id..":"..msg.sender_id.user_id..":lov_Bottts"..msg.chat_id)
 end
 if redis:get(bot_id..":"..msg.sender_id.user_id..":lov_Botttuus"..msg.chat_id) == "sendlove" then
-num = {"😂 10","🤤 20","😢 30","😔 35","😒 75","🤩 34","?? 66","🤐 82","😪 23","😫 19","😛 55","😜 80","😲 63","😓 32","🙂 27","😎 89","😋 99","😁 98","😀 79","🤣 100","😣 8","🙄 3","😕 6","🤯 0",};
+num = {"😂 10","🤤 20","😢 30","😔 35","😒 75","🤩 34","?? 66","🤐 82","😪 23","😫 19","😛 55","😜 80","?? 63","😓 32","🙂 27","😎 89","😋 99","😁 98","😀 79","🤣 100","😣 8","🙄 3","😕 6","🤯 0",};
 sendnum = num[math.random(#num)]
 local tttttt = '- نسبة الذكاء : '..text..' '..sendnum..' %'
 bot.sendText(msg.chat_id,msg.id,tttttt) 
