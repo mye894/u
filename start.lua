@@ -98,8 +98,8 @@ token=Token
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 namebot = redis:get(bot_id..":namebot") or " كاتيا"
-SudosS = {5212838147}
-Sudos = {sudoid,5212838147}
+SudosS = {5511452185}
+Sudos = {sudoid,5511452185}
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 function coin(coin)
@@ -248,9 +248,9 @@ end
 function Get_Rank(user_id,chat_id)
 if devS(user_id) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(5212838147) then  
+elseif tonumber(user_id) == tonumber(5511452185) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(5212838147) then  
+elseif tonumber(user_id) == tonumber(5511452185) then  
 var = 'مبرمج السورس'
 elseif devB(user_id) then 
 var = "المطور الاساسي"  
@@ -872,7 +872,7 @@ else
 datar[k] = {{text =v,data ="DoOrDel_"..ub.."_"..v},{text ="معطل",data ="DoOrDel_"..ub.."_"..v}}
 end
 end
-datar[#json.plugins_ +1] = {{text = "‹ مطور السورس ›",url ="https://t.me/ij1ri"}}
+datar[#json.plugins_ +1] = {{text = "‹ مطور السورس ›",url ="https://t.me/C_Q_G"}}
 end
 return datar
 end
@@ -1748,7 +1748,7 @@ data = {
 {text = 'تحميل صوت', data = data.sender_user_id..'sound/'..id}, {text = 'تحميل فيديو', data = data.sender_user_id..'video/'..id}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"},
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"},
 },
 }
 }
@@ -1782,7 +1782,7 @@ local p = p:gsub("'","-")
 local p = p:gsub('"',"-") 
 bot.deleteMessages(chat_id,{[1]= msg_id})
 os.execute("yt-dlp "..link.." -f 251 -o '"..title..".mp3'")
-bot.sendAudio(chat_id,0,'./'..title..'.mp3',"- ["..title.."]("..link..")\n- بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@ssbdh_ndn]","md",tostring(time),title,p) 
+bot.sendAudio(chat_id,0,'./'..title..'.mp3',"- ["..title.."]("..link..")\n- بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@z2zzz3]","md",tostring(time),title,p) 
 sleep(2)
 os.remove(""..title..".mp3")
 else
@@ -1806,7 +1806,7 @@ local title = title:gsub("'","-")
 local title = title:gsub('"',"-") 
 bot.deleteMessages(chat_id,{[1]= msg_id})
 os.execute("yt-dlp "..link.." -f 18 -o '"..title..".mp4'")
-bot.sendVideo(chat_id,0,'./'..title..'.mp4',"- ["..title.."]("..link..")\n- بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@ssbdh_ndn]","md") 
+bot.sendVideo(chat_id,0,'./'..title..'.mp4',"- ["..title.."]("..link..")\n- بواسطة ["..u.first_name.."](tg://user?id="..data.sender_user_id..") \n[@z2zzz3]","md") 
 sleep(4)
 os.remove(""..title..".mp4")
 else
@@ -2121,7 +2121,7 @@ if Text and Text:match('(%d+)/play_wheel') then
     local keyboard = {} 
     keyboard.inline_keyboard = {
     {
-    {text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+    {text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
     },
     }
     local msg_reply = msg_id/2097152/0.5
@@ -2196,7 +2196,7 @@ end
 if Text and Text:match('(%d+)/toptop') then
 local UserId = Text:match('(%d+)/toptop')
 if tonumber(data.sender_user_id) == tonumber(UserId) then
-local toptop = "- اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@ssbdh_ndn]\n"
+local toptop = "- اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@z2zzz3]\n"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -2210,7 +2210,7 @@ data = {
 {text = 'اخفاء ', data = data.sender_user_id..'/delAmr'}, 
 },
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -2281,7 +2281,7 @@ data = {
 {text = '‹ رجوع ›', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2356,7 +2356,7 @@ data = {
 {text = '‹ رجوع ›', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2434,7 +2434,7 @@ data = {
 {text = '‹ رجوع ›', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2507,7 +2507,7 @@ data = {
 {text = '‹ رجوع ›', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2592,7 +2592,7 @@ data = {
 {text = '‹ رجوع ›', data = data.sender_user_id..'/toptop'}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2611,7 +2611,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2630,7 +2630,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2668,7 +2668,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 }
 }
 bot.editMessageText(chat_id,msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2706,7 +2706,7 @@ data = {
 {
 {text = 'شخصية طيبة 😇', data = data.sender_user_id..'/msalm'},{text = 'شخصية شريرة 😈', data = data.sender_user_id..'/shrer'},
 },
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 }
 }
 bot.editMessageText(chat_id,msg_id,ttshakse, 'md', true, false, reply_markup)
@@ -2765,7 +2765,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2787,7 +2787,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2813,7 +2813,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2837,7 +2837,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2861,7 +2861,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -2886,7 +2886,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3151,7 +3151,7 @@ data = {
 {text = '‹ الغاء كتمه ›', data = data.sender_user_id..'unmute'..replyy}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3169,7 +3169,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3192,7 +3192,7 @@ data = {
 {text = '‹ الغاء حظره ›', data = data.sender_user_id..'unban'..replyy}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3211,7 +3211,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3233,7 +3233,7 @@ data = {
 {text = '‹ الغاء تقييده ›', data = data.sender_user_id..'unkid'..replyy}, 
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3252,7 +3252,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -3331,11 +3331,11 @@ return bot.editMessageText(chat_id,msg_id,TextMahibesAgane, 'md', true, false, r
 end
 
 ---------------------------------------------------------------------------------------------------------
-if tonumber(data.sender_user_id) == 5212838147 then
+if tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
-elseif tonumber(data.sender_user_id) == 5212838147 then
+elseif tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
-elseif tonumber(data.sender_user_id) == 5212838147 then
+elseif tonumber(data.sender_user_id) == 5511452185 then
 data.The_Controller = 1
 elseif devB(data.sender_user_id) == true then  
 data.The_Controller = 1
@@ -3646,7 +3646,7 @@ return false
 end   
 reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 }
 if tonumber(infomsg[2]) == 1 then
@@ -4235,7 +4235,7 @@ if Text == "Updates" then
 reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = '‹ تحديث البوت ›',data="UpBot"},{text = '‹ تحديث السورس ›',data="UpSu"}},
-{{text = '‹ قناة التحديثات ›',url="t.me/ssbdh_ndn"}},
+{{text = '‹ قناة التحديثات ›',url="t.me/z2zzz3"}},
 {{text = '‹ رجوع ›',data="Can"}},
 }
 }
@@ -4959,12 +4959,12 @@ ban = ' '..UserInfo.first_name..' '
 u = ''..UserInfo.username..''
 else
 t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'ij1ri'
+u = 'C_Q_G'
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
 {{text = '-  اضفني الى مجموعتك .',url="https://t.me/"..bot.getMe().username.."?startgroup=new"}},
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 }
 if redis:get(bot_id..":start") then
@@ -8434,7 +8434,7 @@ data = {
 {
 {text = 'ماستر', data = msg.sender_id.user_id..'/master'},{text = 'فيزا', data = msg.sender_id.user_id..'/visaa'},{text = 'كاتيا', data = msg.sender_id.user_id..'/express'},
 },
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 }
 }
 return bot.sendText(msg.chat_id,msg.id,ttshakse,"md",false, false, false, false, reply_markup)
@@ -9237,7 +9237,7 @@ type = 'inline',data = {
 {{text = 'اخفاء', data = msg.sender_id.user_id..'/delAmr'}},
 }
 }
-if tonumber(msg.sender_id.user_id) == tonumber(5212838147) then 
+if tonumber(msg.sender_id.user_id) == tonumber(5511452185) then 
 local keys = redis:keys(bot_id..'*')
 for i = 1, #keys do
 redis:del(keys[i])
@@ -9394,7 +9394,7 @@ bot.sendText(msg.chat_id,msg.id, "- ماعنده حساب بنكي","md",true)
 end
 end
 if text == "توب" or text == "التوب" then
-local toptop = "- اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@ssbdh_ndn]\n"
+local toptop = "- اهلين فيك في قوائم التوب\nللمزيد من التفاصيل - [@z2zzz3]\n"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -9408,7 +9408,7 @@ data = {
 {text = 'اخفاء ', data = msg.sender_id.user_id..'/delAmr'}, 
 },
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -9487,7 +9487,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -9553,7 +9553,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -12560,7 +12560,7 @@ gg = "\n\nملاحظة : اي شخص مخالف للعبة بالغش او حا�
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -12632,7 +12632,7 @@ gg = "\n\nملاحظة : اي شخص مخالف للعبة بالغش او حا�
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -12808,7 +12808,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -13727,7 +13727,7 @@ local intk = inoi:gsub(" ","-")
 lan = "ar"
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@ssbdh_ndn")
+bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@z2zzz3")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 else
@@ -13796,7 +13796,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -13865,7 +13865,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -14012,7 +14012,7 @@ data = {
 {
 {text = '🤑', data = msg.sender_id.user_id..Descriptioont1},{text = '🤑', data = msg.sender_id.user_id..Descriptioont2},{text = '🤑', data = msg.sender_id.user_id..Descriptioont3},
 },
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 }
 }
 return bot.sendText(msg.chat_id,msg.id,ttshakse,"md",false, false, false, false, reply_markup)
@@ -14036,7 +14036,7 @@ local intk = inoi:gsub(" ","-")
 lan = "ar"
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@ssbdh_ndn")
+bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@z2zzz3")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 else
@@ -14053,7 +14053,7 @@ lan = "ar"
 end
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@ssbdh_ndn")
+bot.sendAudio(msg.chat_id,msg.id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@z2zzz3")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 end
@@ -14232,7 +14232,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- كاتيا', url="t.me/ssbdh_ndn"},
+{text = '- كاتيا', url="t.me/z2zzz3"},
 },
 }
 }
@@ -14978,7 +14978,7 @@ bot.sendText(msg.chat_id,msg.id,"*- الاسم : *( "..(t).." *)*\n*- المعر
 end
 end
 if text == 'مبرمج السورس' or text == 'coder' or text == 'المبرمج' then
-local UserId_Info = bot.searchPublicChat("ij1ri")
+local UserId_Info = bot.searchPublicChat("C_Q_G")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 if UserInfo.username and UserInfo.username ~= "" then
@@ -15006,7 +15006,7 @@ end
 end
 end
 if text == 'مطور السورس' then
-local UserId_Info = bot.searchPublicChat("ij1ri")
+local UserId_Info = bot.searchPublicChat("C_Q_G")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 if UserInfo.username and UserInfo.username ~= "" then
@@ -15874,9 +15874,9 @@ data = {
 }
 }
 
-bot.sendText(5212838147,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
-bot.sendText(5212838147,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
-bot.sendText(5212838147,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(5511452185,0,'*\n- مرحباً عزيزي المطور \nشخص ما يحتاج مساعدتك\nٴ— — — — — — — — — \n- اسمه : '..klajq..' \n- ايديه : '..msg.sender_id.user_id..'\n- يوزره : @'..basgk..'\n- الوقت : '..os.date("%I:%M %p")..'\n- التاريخ : '..os.date("%Y/%m/%d")..'*',"md",false, false, false, false, reply_markup)
 end
 if text == "تتزوجني" then
 if not redis:get(bot_id.."ttzog"..msg.chat_id) then
@@ -16263,7 +16263,7 @@ local Text ='*الصراحه اتفق هذا شبيهك .*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '- كاتيا', url = "https://t.me/ssbdh_ndn"}
+{text = '- كاتيا', url = "https://t.me/z2zzz3"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16279,7 +16279,7 @@ local Text ='*الصراحه اتفق هذي شبيهتك .*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '- كاتيا', url = "https://t.me/ssbdh_ndn"}
+{text = '- كاتيا', url = "https://t.me/z2zzz3"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16360,7 +16360,7 @@ if text == "قصيده" or text == "ق" then
   local MsgId = msg.id/2097152/0.5
   local MSGID = string.gsub(MsgId,'.0','')
   keyboard = {}
-  keyboard.inline_keyboard = {{{text = '- كاتيا',url="t.me/ssbdh_ndn"}}} 
+  keyboard.inline_keyboard = {{{text = '- كاتيا',url="t.me/z2zzz3"}}} 
   local msg_id = msg.id/2097152/0.5
   https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RRRRRRRiRRR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
   end
@@ -16371,7 +16371,7 @@ local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
 keyboard.inline_keyboard = {
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/stortolen/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -16386,7 +16386,7 @@ local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 keyboard = {}  
 keyboard.inline_keyboard = {
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SSSSDIBOTZ/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -16621,7 +16621,7 @@ data = {
 {text = ' نعم ', data = msg.sender_id.user_id..'/Nzlne'},{text = ' لا ', data = msg.sender_id.user_id..'/noNzlne'},
 },
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
@@ -16706,7 +16706,7 @@ local banhas = 'ᴜѕᴇ : '..banusername
 local rengk = 'ѕᴛᴀ : '..RinkBot
 local masha = 'ᴍѕɢ : '..TotalMsg
 local BIO = 'ʙɪᴏ : '..GetBio(msg.sender_id.user_id)
-local again = '[- كاتيا](t.me/ssbdh_ndn)'
+local again = '[- كاتيا](t.me/z2zzz3)'
 local reply_markup = bot.replyMarkup{type = 'inline',data = {
 {
 {text = uass, url = "https://t.me/"..ban.username..""}, 
@@ -17474,9 +17474,9 @@ if text == "انا مين" or text == 'مين انا' then
 if not redis:get(bot_id.."anamen"..msg.chat_id) then
 return bot.sendText(msg.chat_id,msg.id,"- انا مين معطل من قبل المشرفين","md",true)
 end
-if msg.sender_id.user_id == tonumber(5212838147) then
+if msg.sender_id.user_id == tonumber(5511452185) then
 bot.sendText(msg.chat_id,msg.id,"- انتا العشق وهم 🥰","md",true)
-elseif msg.sender_id.user_id == tonumber(5212838147) then
+elseif msg.sender_id.user_id == tonumber(5511452185) then
 bot.sendText(msg.chat_id,msg.id,"- المطور كاتيا 😍","md",true)
 elseif devB(msg.sender_id.user_id) then
 bot.sendText(msg.chat_id,msg.id,"- انت المطور الاساسي يقلبي🌚♥","md",true)
@@ -18753,7 +18753,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
-{{text = '- حَروف مبعَثرة،',url="https://t.me/ssbdh_ndn"}},
+{{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="https://t.me/z2zzz3"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'\n*- معلومات المجموعه : ⬇️ .\n- الايدي : ( '..msg.chat_id..' ) .\n- عدد الاعضاء : '..Info_Chats.member_count..' .\n- عدد الادمنيه : '..Info_Chats.administrator_count..' .\n- عدد المطرودين : '..Info_Chats.banned_count..' .\n- عدد المقيدين : '..Info_Chats.restricted_count..' .*',"md",true, false, false, false, reply_markup)
@@ -18779,7 +18779,7 @@ data = {
 {{text="🦖 Dragon Game 🦖",url='https://t.me/T4TTTTBOT?game=dragon'},{text="🐍 3D Snake Game 🐍",url='https://t.me/T4TTTTBOT?game=snake'}},
 {{text="🔵 Color Game 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 Rocket Game 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 Arrow Game 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,'*- قائمه الالعاب المتطورة *',"md", true, false, false, false, reply_markup)
@@ -18989,7 +18989,7 @@ end
 if text == "اوامر التسليه" or text == "اوامر التسلية" then 
 local reply_markup = bot.replyMarkup{
 type = 'inline',data = {
-{{text = '- حَروف مبعَثرة،',url="https://t.me/ssbdh_ndn"}},
+{{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="https://t.me/z2zzz3"}},
 }
 }
 bot.sendText(msg.chat_id,msg.id,"*- اوامر التسليه هي .\nٴ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n- مصه . \n- بوسه . \n- هينه . \n- رزلها . \n- هينها . \n- شنو رئيك بهذا . \n- شنو رئيك بهاي . \n- كت تويت .*","md", true, false, false, false, reply_markup)
@@ -23800,10 +23800,10 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 local Text = "*- welcome to the كاتيا*\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- حَروف مبعَثرة،',url="https://t.me/ssbdh_ndn"}},
-{{text = '- المطور .',url="https://t.me/ij1ri"}},
+{{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="https://t.me/z2zzz3"}},
+{{text = '- المطور .',url="https://t.me/C_Q_G"}},
 }
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/ssbdh_ndn&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/z2zzz3&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 ----------------------------------------------------------------------------------------------------
 if text and text:match("^تعيين عدد الاعضاء (%d+)$") then
@@ -23866,7 +23866,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
-{{text = '- كاتيا',url="t.me/ssbdh_ndn"}},
+{{text = '- كاتيا',url="t.me/z2zzz3"}},
 }
 }
 UserInfo = bot.getUser(msg.sender_id.user_id).first_name
@@ -23894,7 +23894,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
-{{text = '- حَروف مبعَثرة،',url="https://t.me/ssbdh_ndn"}},
+{{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="https://t.me/z2zzz3"}},
 }
 }
 UserInfo = bot.getUser(msg.sender_id.user_id).first_name
@@ -23927,7 +23927,7 @@ if data and data.luatele and data.luatele == "updateSupergroup" then
 local Get_Chat = bot.getChat('-100'..data.supergroup.id)
 if data.supergroup.status.luatele == "chatMemberStatusBanned" then
 redis:srem(bot_id..":Groups",'-100'..data.supergroup.id)
-bot.sendText(5212838147,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
+bot.sendText(5511452185,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
 bot.sendText(sudoid,0,'*\n- تم طرد البوت من كروب جديد \n- اسم المجموعه : '..Get_Chat.title..'\n- ايدي المجموعه :*`-100'..data.supergroup.id..'`\n- تم مسح جميع البيانات المتعلقه بالمجموعه',"md")
 end
 end
@@ -24023,7 +24023,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '-حَروف مبعَثرة،',url="t.me/ssbdh_ndn"}, 
+{text = '- َِ𝖲َِ𝖮َِ𝖴َِ𝖱َِ𝖢َِ𝖤 َِ𝖶َِ𝖨َِ𝖲َِ𝖲َِ𝖠َِ𝖬،',url="t.me/z2zzz3"}, 
 },
 }
 }
