@@ -15101,61 +15101,58 @@ bot.sendText(msg.chat_id, msg.id,
         {text = username, callback_data = "user_name_" .. UserId}  -- الزر الآن سيحمل اسم الحساب بشكل صحيح
     })
 end
+
 if not redis:get(bot_id..":"..msg.chat_id..":settings:id") then
-if text == "ايدي" and msg.reply_to_message_id == 0 then
-local Get_Rank =(Get_Rank(msg.sender_id.user_id,msg.chat_id))
-local messageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":message") or 1)
-local gameC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":game") or 0)
-local Addedmem =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":Addedmem") or 0)
-local EditmessageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":Editmessage") or 0)
-local Total_ms =Total_message((redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":message") or 1))
-local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
-local TotalPhoto = photo.total_count or 0
-local UserInfo = bot.getUser(msg.sender_id.user_id)
-local InfoUser = bot.getUserFullInfo(msg.sender_id.user_id)
-local Texting = {'↫ دغيـرھَا لزڪـت بيـھَہّ 😡😕','↫ مـبـين مـטּ وجـهـك زاحــف ابـو نسـوان 🤣🔫 ','↫ شهــــــلـٰـہ عســـــلـٰـہ 🍯😻','↫ نــڪبــــــــــــــــــــل 🙈♥️','↫ بربـڪ مقتنـع بجهرتـڪ🤔😹','↫ ياحلـو ميـن الله جـابـڪ ☺️🧡','↫ يمـه يمـه شڪد حـلــو 🍫💖 ',}
-local Description = Texting[math.random(#Texting)]
-if UserInfo.username and UserInfo.username ~= "" then
-UserInfousername ="[@"..UserInfo.username.."]"
-else
-UserInfousername = 'لا يوجد'
-end
-if InfoUser.bio then
-Bio = InfoUser.bio
-else
-Bio = 'لا يوجد'
-end
-if redis:get(bot_id..":"..msg.chat_id..":id") then
-theId = redis:get(bot_id..":"..msg.chat_id..":id") 
-theId = theId:gsub('#AddMem',Addedmem) 
-theId = theId:gsub('#game',gameC) 
-theId = theId:gsub('#id',msg.sender_id.user_id) 
-theId = theId:gsub('#name',UserInfo.first_name) 
-theId = theId:gsub('#username',UserInfousername) 
-theId = theId:gsub('#msgs',messageC) 
-theId = theId:gsub('#edit',EditmessageC) 
-theId = theId:gsub('#stast',Get_Rank) 
-theId = theId:gsub('#auto',Total_ms) 
-theId = theId:gsub('#Description',Description) 
-theId = theId:gsub('#photos',TotalPhoto) 
-theId = theId:gsub('#Bio',Bio) 
-elseif
-redis:get(bot_id..":iid") then
-theId = redis:get(bot_id..":iid") 
-theId = theId:gsub('#AddMem',Addedmem) 
-theId = theId:gsub('#game',gameC) 
-theId = theId:gsub('#id',msg.sender_id.user_id) 
-theId = theId:gsub('#name',UserInfo.first_name) 
-theId = theId:gsub('#username',UserInfousername) 
-theId = theId:gsub('#msgs',messageC) 
-theId = theId:gsub('#edit',EditmessageC) 
-theId = theId:gsub('#stast',Get_Rank) 
-theId = theId:gsub('#auto',Total_ms) 
-theId = theId:gsub('#Description',Description) 
-theId = theId:gsub('#photos',TotalPhoto) 
-theId = theId:gsub('#Bio',Bio) 
-else
-theId = Description.."\n*- الايدي : (* `"..msg.sender_id.user_id.."`* ) .\n- المعرف :* ( "..UserInfousername.." ) .\n- *الرتبه : (  "..Get_Rank.." ) .\n- تفاعلك : (  "..Total_ms.." ) .\n- عدد الرسائل : ( "..messageC.." ) .\n- عدد السحكات : ( "..EditmessageC.." ) .\n- عدد صورك : ( "..TotalPhoto.."* ) ."
+    if text == "ايدي" and msg.reply_to_message_id == 0 then
+        local Get_Rank =(Get_Rank(msg.sender_id.user_id,msg.chat_id))
+        local messageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":message") or 1)
+        local gameC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":game") or 0)
+        local Addedmem =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":Addedmem") or 0)
+        local EditmessageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":Editmessage") or 0)
+        local Total_ms =Total_message((redis:get(bot_id..":"..msg.chat_id..":"..msg.sender_id.user_id..":message") or 1))
+        local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
+        local TotalPhoto = photo.total_count or 0
+        local UserInfo = bot.getUser(msg.sender_id.user_id)
+        local InfoUser = bot.getUserFullInfo(msg.sender_id.user_id)
+        local Texting = {'↫ دغيـرھَا لزڪـت بيـھَہّ 😡😕','↫ مـبـين مـטּ وجـهـك زاحــف ابـو نسـوان 🤣🔫 ','↫ شهــــــلـٰـہ عســـــلـٰـہ 🍯😻','↫ نــڪبــــــــــــــــــــل 🙈♥️','↫ بربـڪ مقتنـع بجهرتـڪ🤔😹','↫ ياحلـو ميـن الله جـابـڪ ☺️🧡','↫ يمـه يمـه شڪد حـلــو 🍫💖 ',}
+        local Description = Texting[math.random(#Texting)]
+        
+        -- التحقق من اسم المستخدم
+        local UserInfousername
+        if UserInfo.username and UserInfo.username ~= "" then
+            UserInfousername ="[@"..UserInfo.username.."]"
+        else
+            UserInfousername = 'لا يوجد'
+        end
+        
+        -- التحقق من السيرة الذاتية
+        local Bio = InfoUser.bio or 'لا يوجد'
+        
+        -- بناء النص النهائي (theId)
+        local theId
+        if redis:get(bot_id..":"..msg.chat_id..":id") then
+            theId = redis:get(bot_id..":"..msg.chat_id..":id") 
+            theId = theId:gsub('#AddMem',Addedmem) 
+            theId = theId:gsub('#game',gameC) 
+            theId = theId:gsub('#id',msg.sender_id.user_id) 
+            theId = theId:gsub('#name',UserInfo.first_name) 
+            theId = theId:gsub('#username',UserInfousername) 
+            theId = theId:gsub('#msgs',messageC) 
+            theId = theId:gsub('#edit',EditmessageC) 
+            theId = theId:gsub('#stast',Get_Rank) 
+            theId = theId:gsub('#auto',Total_ms) 
+            theId = theId:gsub('#Description',Description) 
+            theId = theId:gsub('#photos',TotalPhoto) 
+            theId = theId:gsub('#Bio',Bio)
+        else
+            theId = Description.."\n*- الايدي : (* `"..msg.sender_id.user_id.."`* ) .\n- المعرف :* ( "..UserInfousername.." ) .\n- *الرتبه : (  "..Get_Rank.." ) .\n- تفاعلك : (  "..Total_ms.." ) .\n- عدد الرسائل : ( "..messageC.." ) .\n- عدد السحكات : ( "..EditmessageC.." ) .\n- عدد صورك : ( "..TotalPhoto.."* ) ."
+        end
+        
+        -- إرسال الرسالة مع الزر الشفاف
+        bot.sendText(msg.chat_id, msg.id, theId, "md", true, false, false, false, {
+            {text = UserInfo.first_name, callback_data = "user_name_" .. msg.sender_id.user_id}  -- الزر يحتوي على اسم الحساب
+        })
+    end
 end
 if redis:get(bot_id..":"..msg.chat_id..":settings:id:ph") then
 bot.sendText(msg.chat_id,msg.id,theId,"md",true) 
