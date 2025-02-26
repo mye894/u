@@ -15090,7 +15090,16 @@ UserInfousername = '@'..UserInfo.username
 else
 UserInfousername = 'لا يوجد'
 end
-bot.sendText(msg.chat_id,msg.id,'\n*- ايديك : '..UserId..'\n- معرفك : '..UserInfousername..'\n- ‍رتبتك : '..Get_Rank..'\n- موقعك : '..StatusmC..'\n- رسائلك : '..messageC..'\n- تعديلاتك : '..EditmessageC..'\n- تفاعلك : '..Total_ms..'*'..(PermissionsUser or '') ,"md",true) 
+local username = msg.sender.username or "لا يوجد اسم مستخدم"  -- في حال لم يكن هناك اسم مستخدم، سيتم إظهار "لا يوجد اسم مستخدم"
+
+bot.sendText(msg.chat_id, msg.id, 
+    '\n*- ايديك : ' .. UserId .. '\n- معرفك : ' .. UserInfousername .. 
+    '\n- ‍رتبتك : ' .. Get_Rank .. '\n- موقعك : ' .. StatusmC .. 
+    '\n- رسائلك : ' .. messageC .. '\n- تعديلاتك : ' .. EditmessageC .. 
+    '\n- تفاعلك : ' .. Total_ms .. '*' .. (PermissionsUser or ''), 
+    "md", true, false, false, false, {
+        {text = username, callback_data = "user_name_" .. UserId}  -- اسم الحساب الذي كتب "ايدي" كزر
+    })
 end
 if not redis:get(bot_id..":"..msg.chat_id..":settings:id") then
 if text == "ايدي" and msg.reply_to_message_id == 0 then
